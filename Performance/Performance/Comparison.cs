@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Linq;
 
 namespace Performance
 {
     public abstract class Comparison
     {
-        public abstract void Run(int numberTimes, List<int> optionsToRun);
+        public abstract void Run(int numberTimes, IEnumerable<int> optionsToRun = null);
     }
 
     public class Comparison<T> : Comparison
@@ -19,12 +20,13 @@ namespace Performance
             _comparisonRunner = Activator.CreateInstance<T>();
         }
 
-        public override void Run(int numberTimes, List<int> optionsToRun)
+        public override void Run(int numberTimes, IEnumerable<int> optionsToRun = null)
         {
             Console.WriteLine();
-            Console.WriteLine($"*** Run comparison {_comparisonRunner.Name} with options : {string.Join(" vs ", optionsToRun)} and {numberTimes} executions ***");
+            var optionsText = optionsToRun == null ? "all options" : $"options : {string.Join(" vs ", optionsToRun)}";
+            Console.WriteLine($"*** Run comparison {_comparisonRunner.Name} with {optionsText} and {numberTimes} executions ***");
 
-            foreach (var option in optionsToRun)
+            foreach (var option in optionsToRun ?? _comparisonRunner.OptionDictionary.Keys.AsEnumerable())
             {
                 Console.WriteLine();
                 Console.WriteLine($"** Option {option} **");

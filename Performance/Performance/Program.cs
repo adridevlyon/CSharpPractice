@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using Performance.Reflection;
 using Enum = System.Enum;
 
@@ -30,7 +29,7 @@ namespace Performance
                 {
                     Console.WriteLine();
                     Console.WriteLine($"**** Test #{test + 1} ****");
-                    comparison.Run(numberExecutions, new List<int> { 1, 2, 3 });
+                    comparison.Run(numberExecutions);
                 }
             }
 

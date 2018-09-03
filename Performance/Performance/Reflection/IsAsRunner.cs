@@ -15,7 +15,8 @@ namespace Performance.Reflection
             {
                 {1, new OptionIsAs() },
                 {2, new OptionAs() },
-                {3, new OptionIsCast() }
+                {3, new OptionIsCast() },
+                {4, new OptionIsPatternMatching() }
             };
         }
     }

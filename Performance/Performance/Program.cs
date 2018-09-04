@@ -1,4 +1,5 @@
 ﻿using System;
+using Performance.Collections;
 using Performance.Reflection;
 using Enum = System.Enum;
 
@@ -10,6 +11,7 @@ namespace Performance
         {
             Console.WriteLine("***** Topics *****");
             Console.WriteLine($"1. {IsAsRunner.ConstName}");
+            Console.WriteLine($"2. {HashSetListContainsRunner.ConstName}");
             Console.WriteLine();
 
             var option = GetEnteredEnum<TopicOption>("Please pick a topic:", "No available topic selected");
@@ -21,6 +23,9 @@ namespace Performance
             {
                 case TopicOption.IsAs:
                     comparison = new Comparison<IsAsRunner>();
+                    break;
+                case TopicOption.HashSetListContains:
+                    comparison = new Comparison<HashSetListContainsRunner>();
                     break;
             }
             if (comparison != null)

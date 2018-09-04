@@ -44,9 +44,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collections\MyElement.cs" />
+    <Compile Include="Collections\OptionHashset.cs" />
     <Compile Include="Comparison.cs" />
     <Compile Include="IComparisonOption.cs" />
     <Compile Include="IComparisonRunner.cs" />
+    <Compile Include="Collections\HashSetListContainsRunner.cs" />
     <Compile Include="Reflection\MyCastingType.cs" />
     <Compile Include="Reflection\OptionAs.cs" />
     <Compile Include="Reflection\OptionIsAs.cs" />
@@ -55,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection\OptionIsCast.cs" />
     <Compile Include="Reflection\OptionIsPatternMatching.cs" />
+    <Compile Include="Collections\OptionList.cs" />
     <Compile Include="TopicOption.cs" />
   </ItemGroup>
   <ItemGroup>

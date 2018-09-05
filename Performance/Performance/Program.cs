@@ -1,6 +1,7 @@
 ﻿using System;
 using Performance.Collections;
 using Performance.Reflection;
+using Performance.Strings;
 using Enum = System.Enum;
 
 namespace Performance
@@ -10,26 +11,34 @@ namespace Performance
         private static void Main(string[] args)
         {
             Console.WriteLine("***** Topics *****");
+            Console.WriteLine("0. Exit");
             Console.WriteLine($"1. {IsAsRunner.ConstName}");
             Console.WriteLine($"2. {HashSetListContainsRunner.ConstName}");
+            Console.WriteLine($"3. {StringBuilderConcatRunner.ConstName}");
             Console.WriteLine();
 
             var option = GetEnteredEnum<TopicOption>("Please pick a topic:", "No available topic selected");
-            var numberTests = GetEnteredNumber("How many times to test ?", x => x <= 0, "Please enter an int");
-            var numberExecutions = GetEnteredNumber("How many inner executions ?", x => x <= 0, "Please enter an int");
 
             Comparison comparison = null;
             switch (option)
             {
+                case TopicOption.None:
+                    return;
                 case TopicOption.IsAs:
                     comparison = new Comparison<IsAsRunner>();
                     break;
                 case TopicOption.HashSetListContains:
                     comparison = new Comparison<HashSetListContainsRunner>();
                     break;
+                case TopicOption.StringBuilderConcat:
+                    comparison = new Comparison<StringBuilderConcatRunner>();
+                    break;
             }
             if (comparison != null)
             {
+                var numberTests = GetEnteredNumber("How many times to test ?", x => x <= 0, "Please enter an int");
+                var numberExecutions = GetEnteredNumber("How many inner executions ?", x => x <= 0, "Please enter an int");
+
                 for (var test = 0; test < numberTests; test++)
                 {
                     Console.WriteLine();

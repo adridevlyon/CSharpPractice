@@ -46,6 +46,9 @@
   <ItemGroup>
     <Compile Include="Collections\MyElement.cs" />
     <Compile Include="Collections\OptionHashset.cs" />
+    <Compile Include="Strings\OptionConcat.cs" />
+    <Compile Include="Strings\OptionStringBuilder.cs" />
+    <Compile Include="Strings\StringBuilderConcatRunner.cs" />
     <Compile Include="Comparison.cs" />
     <Compile Include="IComparisonOption.cs" />
     <Compile Include="IComparisonRunner.cs" />

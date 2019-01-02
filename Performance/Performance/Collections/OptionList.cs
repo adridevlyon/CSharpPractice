@@ -6,7 +6,7 @@ namespace Performance.Collections
     {
         public string Name => $"List containing {_numberOfElements} elements";
         private readonly int _numberOfElements;
-        public List<MyElement> List { get; }
+        private List<MyElement> List { get; }
         private readonly MyElement _lastElement;
 
         public OptionList(int numberOfElements)

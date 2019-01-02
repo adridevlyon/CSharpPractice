@@ -7,7 +7,7 @@ namespace Performance.Strings
     {
         public string Name => $"String builder containing {_numberOfElements} elements";
         private readonly int _numberOfElements;
-        public List<string> StringList { get; }
+        private List<string> StringList { get; }
 
         public OptionStringBuilder(int numberOfElements)
         {

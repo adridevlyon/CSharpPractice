@@ -6,7 +6,7 @@ namespace Performance.Collections
     {
         public string Name => $"Hashset containing {_numberOfElements} elements";
         private readonly int _numberOfElements;
-        public HashSet<MyElement> HashSet { get; }
+        private HashSet<MyElement> HashSet { get; }
         private readonly MyElement _lastElement;
 
         public OptionHashset(int numberOfElements)

@@ -3,12 +3,11 @@
     public class OptionIsAs : IComparisonOption
     {
         public string Name => "Use is and cast with as if needed";
-        public MyCastingType Casted { get; private set; }
 
         public void Run()
         {
-            Casted = DoCast(new object());
-            Casted = DoCast(new MyCastingType());
+            DoCast(new object());
+            DoCast(new MyCastingType());
         }
 
         private MyCastingType DoCast(object myObject)

@@ -47,6 +47,7 @@
     <Compile Include="Collections\MyElement.cs" />
     <Compile Include="Collections\OptionHashset.cs" />
     <Compile Include="Strings\OptionCharLoop.cs" />
+    <Compile Include="Strings\OptionCharLoopStringBuilder.cs" />
     <Compile Include="Strings\OptionCompiledRegex.cs" />
     <Compile Include="Strings\OptionConcat.cs" />
     <Compile Include="Strings\OptionRegex.cs" />

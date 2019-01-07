@@ -15,7 +15,8 @@ namespace Performance.Strings
             {
                 {1, new OptionCharLoop() },
                 {2, new OptionRegex() },
-                {3, new OptionCompiledRegex() }
+                {3, new OptionCompiledRegex() },
+                {4, new OptionCharLoopStringBuilder() }
             };
         }
     }

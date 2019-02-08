@@ -2,7 +2,7 @@
 using Xunit;
 using Xunit.Abstractions;
 
-namespace Performance.Test.Collections
+namespace Performance.Test.Strings
 {
     public class StringBuilderConcatRunnerTest : AbstractRunnerTest
     {

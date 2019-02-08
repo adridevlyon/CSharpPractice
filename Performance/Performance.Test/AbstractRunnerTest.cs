@@ -1,6 +1,6 @@
 ﻿using Xunit.Abstractions;
 
-namespace Performance.Test.Collections
+namespace Performance.Test
 {
     public abstract class AbstractRunnerTest
     {
@@ -17,7 +17,6 @@ namespace Performance.Test.Collections
         {
             for (var test = 0; test < numberTests; test++)
             {
-                _testOutputHelper.WriteLine("");
                 _testOutputHelper.WriteLine($"**** Test #{test + 1} ****");
                 var result = ComparisonRunner.Run(numberExecutions);
                 _testOutputHelper.WriteLine(result.GetJournal());

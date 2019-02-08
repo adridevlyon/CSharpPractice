@@ -48,7 +48,6 @@ namespace Performance
 
                 for (var test = 0; test < numberTests; test++)
                 {
-                    Console.WriteLine();
                     Console.WriteLine($"**** Test #{test + 1} ****");
                     var result = comparison.Run(numberExecutions);
                     Console.WriteLine(result.GetJournal());

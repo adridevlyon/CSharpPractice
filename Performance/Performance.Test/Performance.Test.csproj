@@ -73,12 +73,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Collections\AbstractRunnerTest.cs" />
+    <Compile Include="AbstractRunnerTest.cs" />
     <Compile Include="Collections\HashSetListContainsRunnerTest.cs" />
-    <Compile Include="Collections\IsAsRunnerTest.cs" />
+    <Compile Include="Reflection\IsAsRunnerTest.cs" />
     <Compile Include="Collections\ListArrayAddRunnerTest.cs" />
-    <Compile Include="Collections\StringBuilderConcatRunnerTest.cs" />
-    <Compile Include="Collections\StringReplaceRunnerTest.cs" />
+    <Compile Include="Strings\StringBuilderConcatRunnerTest.cs" />
+    <Compile Include="Strings\StringReplaceRunnerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

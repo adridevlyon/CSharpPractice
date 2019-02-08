@@ -2,14 +2,14 @@
 
 namespace Performance.Collections
 {
-    public class OptionHashset : IComparisonOption
+    public class OptionHashsetContains : IComparisonOption
     {
         public string Name => $"Hashset containing {_numberOfElements} elements";
         private readonly int _numberOfElements;
         private HashSet<MyElement> HashSet { get; }
         private readonly MyElement _lastElement;
 
-        public OptionHashset(int numberOfElements)
+        public OptionHashsetContains(int numberOfElements)
         {
             _numberOfElements = numberOfElements;
             HashSet = new HashSet<MyElement>();

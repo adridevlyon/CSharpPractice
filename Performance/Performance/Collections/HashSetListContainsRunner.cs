@@ -13,14 +13,14 @@ namespace Performance.Collections
         {
             OptionDictionary = new Dictionary<int, IComparisonOption>
             {
-                {1, new OptionList(3) },
-                {2, new OptionHashset(3) },
-                {3, new OptionList(10) },
-                {4, new OptionHashset(10) },
-                {5, new OptionList(20) },
-                {6, new OptionHashset(20) },
-                {7, new OptionList(30) },
-                {8, new OptionHashset(30) }
+                {1, new OptionListContains(3) },
+                {2, new OptionHashsetContains(3) },
+                {3, new OptionListContains(10) },
+                {4, new OptionHashsetContains(10) },
+                {5, new OptionListContains(20) },
+                {6, new OptionHashsetContains(20) },
+                {7, new OptionListContains(30) },
+                {8, new OptionHashsetContains(30) }
             };
         }
     }

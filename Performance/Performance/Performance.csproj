@@ -45,9 +45,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Collections\MyElement.cs" />
-    <Compile Include="Collections\OptionHashset.cs" />
+    <Compile Include="Collections\OptionArrayAdd.cs" />
+    <Compile Include="Collections\OptionHashsetContains.cs" />
+    <Compile Include="Collections\OptionListAdd.cs" />
+    <Compile Include="Collections\OptionListWithCapacityAdd.cs" />
     <Compile Include="ComparisonExecutionResult.cs" />
     <Compile Include="ComparisonResult.cs" />
+    <Compile Include="Collections\ListArrayAddRunner.cs" />
     <Compile Include="Strings\OptionCharLoop.cs" />
     <Compile Include="Strings\OptionCharLoopStringBuilder.cs" />
     <Compile Include="Strings\OptionCompiledRegex.cs" />
@@ -68,7 +72,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Reflection\OptionIsCast.cs" />
     <Compile Include="Reflection\OptionIsPatternMatching.cs" />
-    <Compile Include="Collections\OptionList.cs" />
+    <Compile Include="Collections\OptionListContains.cs" />
     <Compile Include="TopicOption.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -76,6 +76,7 @@
     <Compile Include="Collections\AbstractRunnerTest.cs" />
     <Compile Include="Collections\HashSetListContainsRunnerTest.cs" />
     <Compile Include="Collections\IsAsRunnerTest.cs" />
+    <Compile Include="Collections\ListArrayAddRunnerTest.cs" />
     <Compile Include="Collections\StringBuilderConcatRunnerTest.cs" />
     <Compile Include="Collections\StringReplaceRunnerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

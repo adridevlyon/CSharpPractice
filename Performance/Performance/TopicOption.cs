@@ -6,6 +6,7 @@
         IsAs = 1,
         HashSetListContains = 2,
         StringBuilderConcat = 3,
-        StringReplace = 4
+        StringReplace = 4,
+        ListArrayAdd = 5
     }
 }

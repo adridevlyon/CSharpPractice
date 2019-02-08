@@ -2,14 +2,14 @@
 
 namespace Performance.Collections
 {
-    public class OptionList : IComparisonOption
+    public class OptionListContains : IComparisonOption
     {
         public string Name => $"List containing {_numberOfElements} elements";
         private readonly int _numberOfElements;
         private List<MyElement> List { get; }
         private readonly MyElement _lastElement;
 
-        public OptionList(int numberOfElements)
+        public OptionListContains(int numberOfElements)
         {
             _numberOfElements = numberOfElements;
             List = new List<MyElement>();

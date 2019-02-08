@@ -21,16 +21,14 @@ namespace Performance
         {
             var resultBuilder = new StringBuilder();
             var optionsText = OptionsToRun == null ? "all options" : $"options : {string.Join(" vs ", OptionsToRun)}";
-            resultBuilder.AppendLine($"*** Run comparison {ComparisonName} with {optionsText} and {Results.Count} executions ***");
+            resultBuilder.AppendLine($"*** Run comparison {ComparisonName} with {optionsText} and {NumberTimes} executions ***");
 
             foreach (var comparisonResult in Results)
             {
                 var option = comparisonResult.Key;
                 var result = comparisonResult.Value;
 
-                resultBuilder.AppendLine();
-                resultBuilder.AppendLine($"** Option {option} - {result.OptionName} **");
-                resultBuilder.AppendLine($"Elapsed time for {NumberTimes} executions : {result.ExecutionDurationMilliseconds} ms");
+                resultBuilder.AppendLine($"** Option {option} - {result.OptionName} : {result.ExecutionDurationMilliseconds} ms");
             }
 
             resultBuilder.AppendLine();

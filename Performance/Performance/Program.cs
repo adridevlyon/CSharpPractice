@@ -37,6 +37,9 @@ namespace Performance
                 case TopicOption.StringReplace:
                     comparison = new Comparison<StringReplaceRunner>();
                     break;
+                case TopicOption.ListArrayAdd:
+                    comparison = new Comparison<ListArrayAddRunner>();
+                    break;
             }
             if (comparison != null)
             {

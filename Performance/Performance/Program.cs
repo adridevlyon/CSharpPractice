@@ -47,7 +47,8 @@ namespace Performance
                 {
                     Console.WriteLine();
                     Console.WriteLine($"**** Test #{test + 1} ****");
-                    comparison.Run(numberExecutions);
+                    var result = comparison.Run(numberExecutions);
+                    Console.WriteLine(result.GetJournal());
                 }
             }
 

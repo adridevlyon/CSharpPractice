@@ -46,6 +46,8 @@
   <ItemGroup>
     <Compile Include="Collections\MyElement.cs" />
     <Compile Include="Collections\OptionHashset.cs" />
+    <Compile Include="ComparisonExecutionResult.cs" />
+    <Compile Include="ComparisonResult.cs" />
     <Compile Include="Strings\OptionCharLoop.cs" />
     <Compile Include="Strings\OptionCharLoopStringBuilder.cs" />
     <Compile Include="Strings\OptionCompiledRegex.cs" />

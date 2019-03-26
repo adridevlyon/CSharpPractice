@@ -75,6 +75,7 @@
   <ItemGroup>
     <Compile Include="AbstractRunnerTest.cs" />
     <Compile Include="Collections\HashSetListContainsRunnerTest.cs" />
+    <Compile Include="Collections\ListLoopOverRunnerTest.cs" />
     <Compile Include="Reflection\IsAsRunnerTest.cs" />
     <Compile Include="Collections\ListArrayAddRunnerTest.cs" />
     <Compile Include="Strings\StringBuilderConcatRunnerTest.cs" />

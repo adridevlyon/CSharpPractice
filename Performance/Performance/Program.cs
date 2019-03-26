@@ -16,6 +16,8 @@ namespace Performance
             Console.WriteLine($"2. {HashSetListContainsRunner.ConstName}");
             Console.WriteLine($"3. {StringBuilderConcatRunner.ConstName}");
             Console.WriteLine($"4. {StringReplaceRunner.ConstName}");
+            Console.WriteLine($"5. {ListArrayAddRunner.ConstName}");
+            Console.WriteLine($"6. {ListLoopOverRunner.ConstName}");
             Console.WriteLine();
 
             var option = GetEnteredEnum<TopicOption>("Please pick a topic:", "No available topic selected");
@@ -39,6 +41,9 @@ namespace Performance
                     break;
                 case TopicOption.ListArrayAdd:
                     comparison = new Comparison<ListArrayAddRunner>();
+                    break;
+                case TopicOption.ListLoopOver:
+                    comparison = new Comparison<ListLoopOverRunner>();
                     break;
             }
             if (comparison != null)

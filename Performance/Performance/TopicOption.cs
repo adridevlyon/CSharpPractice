@@ -7,6 +7,7 @@
         HashSetListContains = 2,
         StringBuilderConcat = 3,
         StringReplace = 4,
-        ListArrayAdd = 5
+        ListArrayAdd = 5,
+        ListLoopOver = 6
     }
 }

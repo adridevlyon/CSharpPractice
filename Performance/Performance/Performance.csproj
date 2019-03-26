@@ -44,10 +44,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Collections\ListLoopOverRunner.cs" />
     <Compile Include="Collections\MyElement.cs" />
     <Compile Include="Collections\OptionArrayAdd.cs" />
     <Compile Include="Collections\OptionHashsetContains.cs" />
     <Compile Include="Collections\OptionListAdd.cs" />
+    <Compile Include="Collections\OptionListLoopFor.cs" />
+    <Compile Include="Collections\OptionListLoopForeach.cs" />
+    <Compile Include="Collections\OptionListLoopLinq.cs" />
     <Compile Include="Collections\OptionListWithCapacityAdd.cs" />
     <Compile Include="ComparisonExecutionResult.cs" />
     <Compile Include="ComparisonResult.cs" />

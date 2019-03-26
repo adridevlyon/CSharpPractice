@@ -2,7 +2,7 @@
 {
     public class MyElement
     {
-        private int Index { get; }
+        public int Index { get; }
         private string Name1 { get; }
         private string Name2 { get; }
         private string Name3 { get; }
